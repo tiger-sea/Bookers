@@ -1,0 +1,24 @@
+// Place all the styles related to the homes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+.paint {
+    border-bottom: 1px solid #000;
+    color: #000;
+    background-color: #fff;
+    display: inline-block;
+    // margin-left: 50px;
+    transition: .4s;
+}
+.paint a{
+    color: #000;
+    background-color: #fff;
+    text-decoration: none;
+}
+
+.paint:hover {
+    color: #fff;
+    background-color: #000;
+    transition: .4s
+}
