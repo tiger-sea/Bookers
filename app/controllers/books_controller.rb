@@ -4,10 +4,10 @@ class BooksController < ApplicationController
     @book = Book.new(book_params)
     # データをデータベースに保存するためのsaveメソッド実行
     if @book.save
-      flash[:notice] = "Book was successfully created."
+      flash.now[:notice] = "Book was successfully created."
       redirect_to book_path(@book.id)
     else
-      flash[:notice] = "error has occured."
+      # flash.now[:notice] = "error has occured."
       @books = Book.all
       render :index
     end
@@ -33,7 +33,7 @@ class BooksController < ApplicationController
       flash[:notice] = "Book was successfully updated."
       redirect_to book_path(@book.id)
     else
-      flash[:notice] = "error has occured"
+      flash.now[:notice] = "error has occured"
       render :edit
     end
   end

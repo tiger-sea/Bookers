@@ -1,10 +1,114 @@
 // Place all the styles related to the books controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
-#bold {
+* {
+    font-family: verdana, arial, helvetica, sans-serif;
+}
+
+body {
+    margin: 33px;
+}
+
+.flash {
+    color: green;
+}
+
+.index-title {
+    font-size: 26px;
     font-weight: bold;
 }
 
-td {
-    margin-right: 10px;
+.bold {
+    font-weight: bold;
 }
+
+.index-fill-black a {
+    border-bottom: 1px solid #000;
+    color: #000;
+    background-color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 10px;
+    transition: .4s;
+}
+.index-fill-black:hover a {
+    color: #fff;
+    background-color: #000;
+    transition: .4s
+}
+table {
+    font-size: 13px;
+}
+
+.index-table {
+    padding: 5px;
+}
+
+.index-post-new {
+    margin: 10px 10px 10px 0;
+    font-size: 19.5px;
+}
+
+.index-post {
+    margin: 10px 10px 10px 0;
+    font-weight: normal;
+}
+
+.index-body {
+    position: relative;
+}
+
+.index-button {
+    position: relative;
+    top: 10px;
+    display: block;
+    margin: 5px 0 0 0;
+}
+
+// show display
+.show-top {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.show-div .show-text {
+    display: inline-block;
+}
+
+.show-div {
+    font-size: 13px;
+}
+
+.show-title {
+    margin: 15px 33px 20px 33px;
+}
+
+.show-body {
+    margin: 0 33px 20px 33px;
+}
+
+.show-button {
+    font-size: 13px;
+}
+
+.edit-title {
+    font-size: 26px;
+}
+
+.edit-button {
+    position: relative;
+    top: 10px;
+    display: block;
+    margin: 0px 0 20px 0;
+}
+
+.edit-edit-title {
+    margin: 0;
+    padding: 1px;
+}
+
+.edit-edit-body {
+    margin: 10px 0 0 0;
+}
+
