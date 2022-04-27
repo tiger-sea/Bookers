@@ -4,7 +4,7 @@ class BooksController < ApplicationController
     @book = Book.new(book_params)
     # データをデータベースに保存するためのsaveメソッド実行
     if @book.save
-      flash.now[:notice] = "Book was successfully created."
+      flash[:notice] = "Book was successfully created."
       redirect_to book_path(@book.id)
     else
       # flash.now[:notice] = "error has occured."
